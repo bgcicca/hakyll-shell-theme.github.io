@@ -4,9 +4,40 @@ author: Bruno Ciccarino
 tags: ["tutorial", "hakyll", "hakyll theme", "blog"]
 ---
 
+* Table Of Contents
+
+- [[#Installation][Installation]]
+- [[#Supported-Text-Formats][Supported Text Formats]]
+- [[#Metadata-Fields][Metadata Fields]]
+- [[#Sidebar][Sidebar]]
+
+Installation
+
 Hello, welcome to the Hakyll Shell Theme documentation!  
 To use this theme, ensure you have *Hakyll*, *Stack*, and *Cabal* installed.  
-Assuming you’re already set up, let’s dive into configuring your content.  
+If you haven't installed hakyll yet, follow this installation guide:
+
+Installation is provided via Hackage, and some packages are available for different distributions. There are a few different methods to install Hakyll.
+
+- You can use ghcup to install Cabal and then use:
+
+#+BEGIN_SRC  
+    $ cabal new-install hakyll
+#+END_SRC 
+
+- Using stack:
+
+#+BEGIN_SRC
+    $ stack install hakyll
+#+END_SRC
+
+Then clone this repository 
+
+#+BEGIN_SRC shell 
+git clone https://github.com/bgcicca/hakyll-shell-theme.github.io 
+#+END_SRC
+
+Now let’s dive into configuring your content.  
 
 * Supported Text Formats
 
@@ -35,3 +66,39 @@ author: Bruno Ciccarino
 tags: ["tutorial", "hakyll", "hakyll theme", "blog"]
 ---
 #+END_SRC
+
+* Sidebar
+
+To enable the sidebar, follow these two steps:
+
+1. **Uncomment the Sidebar Block**  
+   Open the file `/templates/default.html` and remove the comment tags around the sidebar. Locate this block:
+
+   #+BEGIN_SRC html
+       <!-- <aside class="sidebar">
+         $sidebar$
+       </aside> -->
+   #+END_SRC
+
+   Uncomment it so it becomes:
+
+   #+BEGIN_SRC html
+       <aside class="sidebar">
+         $sidebar$
+       </aside>
+   #+END_SRC
+
+2. **Edit the Sidebar Content**  
+   Next, open the file `/templates/sidebar.html` and customize its content. For example, you can use the following code:
+
+   #+BEGIN_SRC html
+   <div class="sidebar-widget">
+       <ul>
+         <li><a href="/tags/hakyll.html">hakyll</a></li>
+         <li><a href="/tags/tutorial.html">tutorial</a></li>
+         <li><a href="/tags/blog.html">blog</a></li>
+       </ul>
+   </div>
+   #+END_SRC
+
+After completing these steps, your sidebar will be active and display the specified links.
