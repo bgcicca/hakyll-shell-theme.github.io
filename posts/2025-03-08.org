@@ -3,3 +3,36 @@ title: Getting started
 author: Bruno Ciccarino
 tags: ["tutorial", "hakyll", "hakyll theme", "blog"]
 ---
+
+Hello, welcome to the Hakyll Shell Theme documentation!  
+To use this theme, ensure you have *Hakyll*, *Stack*, and *Cabal* installed.  
+Assuming you’re already set up, let’s dive into configuring your content.  
+
+* Supported Text Formats
+
+This theme leverages Hakyll's Pandoc integration, supporting multiple markup formats for content creation. While this documentation uses Org mode, you can write your posts in:
+
+- Markdown (.md)
+- reStructuredText (.rst)
+- LaTeX
+- HTML
+- AsciiDoc
+- [[https://pandoc.org/][...and other Pandoc-supported formats]]
+
+* Metadata Fields  
+Add these fields to the metadata block (YAML/TOML) at the top of your files to customize your posts:  
+
+- title: Title of the post/page (e.g., "Getting Started")
+- author: Author’s name (e.g., "Bruno Ciccarino")
+- tags: List of keywords (e.g., ["tutorial", "hakyll"])
+
+for example
+
+#+BEGIN_SRC yml 
+---
+title: Getting started
+author: Bruno Ciccarino
+tags: ["tutorial", "hakyll", "hakyll theme", "blog"]
+---
+#+END_SRC
+
