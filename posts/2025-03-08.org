@@ -11,7 +11,7 @@ tags: ["tutorial", "hakyll", "hakyll theme", "blog"]
 - [[#Metadata-Fields][Metadata Fields]]
 - [[#Sidebar][Sidebar]]
 
-Installation
+* Installation
 
 Hello, welcome to the Hakyll Shell Theme documentation!  
 To use this theme, ensure you have *Hakyll*, *Stack*, and *Cabal* installed.  
