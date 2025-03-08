@@ -1,2 +1,13 @@
 * Hakyll Shell Theme 
 
+This theme was based on my blog written completely without javascript, it is responsive, accessible and uses good practices so that the Google robot can find your blog more easily.
+
+The documentation is at: [[https://bgcicca.github.io/hakyll-shell-theme.github.io/posts/2025-03-08.html][hakyll-shell-theme]]
+
+* Features:
+
+- original design
+- responsiveness
+- easy to use
+- separation of categories by tags
+- sidebar
