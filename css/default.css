@@ -110,14 +110,14 @@ main {
 .content article a:hover {
   text-decoration: underline;
 }
-/* .sidebar {
+.sidebar {
   flex-basis: 300px;
 }
 
 .sidebar a {
   color: var(--link-fg);
-} */
-
+}
+  
 footer {
   padding: 1.5rem;
   border-top: 0.1rem solid var(--border-bg);
